@@ -57,7 +57,7 @@ public class GetAccidentData
     public static async Task<string> GetAccidentMessage()
     {
         var http = new HttpClient();
-        http.DefaultRequestHeaders.Add("AccountKey","Y6eiSngkQb2s7a4ZxykDsw==");
+        http.DefaultRequestHeaders.Add("AccountKey","{Your API Key}");
         string requestURL = "http://datamall2.mytransport.sg/ltaodataservice/TrafficIncidents";
         var response = await http.GetAsync(requestURL);
         var result = await response.Content.ReadAsStringAsync();
